@@ -5,12 +5,18 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', (req, res) => {
-
+    var fmsg = req.flash();
+    var feedback = '';
+    if (fmsg.message) {
+        feedback = fmsg.message;
+    }
     var title = 'Welcome';
     var description = 'Hello, Node.js';
     var list = template.list(req.list);
     var html = template.HTML(title, list,
-        `<h2>${title}</h2>${description}
+        `
+               <div style="color: blue;">${feedback}</div>
+               <h2>${title}</h2>${description}
                <img src="/images/hello.jpg" alt="hello" style="width:300px; display: block; margin-top: 10px;">
                `,
         `<a href="/topic/create">create</a>`,
