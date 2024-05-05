@@ -1,0 +1,30 @@
+{
+  "users": [
+    {
+      "id": "wCEdPj19R",
+      "email": "a1234@naver.com",
+      "password": "111111",
+      "displayName": "a1234"
+    },
+    {
+      "id": "ZtUe8wZev",
+      "email": "b1234@naver.com",
+      "password": "111111",
+      "displayName": "b1234"
+    },
+    {
+      "id": "D9wyDkGS-",
+      "email": "hi@naver.com",
+      "password": "$2b$10$sioZCV88uJlYoL/mCwoe1umorC0w8VoRvfHAZbRBLqQfehLmaQ1NO",
+      "displayName": "hi"
+    }
+  ],
+  "topics": [
+    {
+      "id": "NbG9LVYTZ",
+      "title": "hi",
+      "description": "hellow",
+      "user_id": "wCEdPj19R"
+    }
+  ]
+}
